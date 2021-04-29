@@ -1,0 +1,191 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Sat Apr  3 15:28:26 2021
+| Host         : DESKTOP-EP3NTTP running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file Top_Student_control_sets_placed.rpt
+| Design       : Top_Student
+| Device       : xc7a35t
+----------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |   121 |
+| Unused register locations in slices containing registers |   230 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      2 |            8 |
+|      6 |            6 |
+|      8 |            6 |
+|     10 |            1 |
+|     12 |            8 |
+|     14 |            5 |
+|    16+ |           87 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             496 |          129 |
+| No           | No                    | Yes                    |              14 |            4 |
+| No           | Yes                   | No                     |            2586 |          363 |
+| Yes          | No                    | No                     |            4502 |          854 |
+| Yes          | No                    | Yes                    |             128 |           16 |
+| Yes          | Yes                   | No                     |             588 |           89 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++--------------------------------------------+---------------------------------------------+----------------------------------------------+------------------+----------------+
+|                Clock Signal                |                Enable Signal                |               Set/Reset Signal               | Slice Load Count | Bel Load Count |
++--------------------------------------------+---------------------------------------------+----------------------------------------------+------------------+----------------+
+| ~clk6p25m                                  |                                             |                                              |                1 |              2 |
+| ~clk6p25m_2                                |                                             |                                              |                1 |              2 |
+| ~clk6p25m_3                                |                                             |                                              |                1 |              2 |
+|  unit_4/clock_2/new_clock                  |                                             |                                              |                1 |              2 |
+| ~clk6p25m_4                                |                                             |                                              |                1 |              2 |
+| ~clk6p25m_0                                |                                             |                                              |                1 |              2 |
+|  clk1                                      |                                             |                                              |                1 |              2 |
+| ~clk6p25m_1                                |                                             |                                              |                1 |              2 |
+|  unit_4/clock_10/OUT_reg                   |                                             |                                              |                1 |              6 |
+|  unit_2/clock_381/count_reg[0]_0           |                                             |                                              |                1 |              6 |
+|  unit_4/clock_20/OUT_reg                   |                                             |                                              |                1 |              6 |
+|  unit_4/clock_381/clk381                   |                                             |                                              |                2 |              6 |
+|  unit_5/clock_381/count_reg[0]_0           |                                             |                                              |                1 |              6 |
+|  unit_5/E[0]                               |                                             |                                              |                1 |              6 |
+|  unit_2/clock_3/CLK                        |                                             |                                              |                1 |              8 |
+|  CLK100MHZ_IBUF_BUFG                       | unit_5/an[3]_i_1__1_n_0                     |                                              |                1 |              8 |
+|  CLK100MHZ_IBUF_BUFG                       | unit_1/samples[0]_i_2_n_0                   | unit_1/solve/oled_data_reg[4]                |                1 |              8 |
+|  CLK100MHZ_IBUF_BUFG                       | unit_1/samples[0]_i_2_n_0                   | unit_1/solve/oled_data_reg[12]_0             |                1 |              8 |
+|  CLK100MHZ_IBUF_BUFG                       | unit_1/samples[0]_i_2_n_0                   | unit_1/solve/oled_data_reg[7]_2              |                2 |              8 |
+|  unit_5/clock_3/Q_reg[3]                   |                                             |                                              |                2 |              8 |
+|  CLK100MHZ_IBUF_BUFG                       | unit_4/maze1/oled_data_reg[14]_1            | unit_4/maze1/oled_data_reg[14]_4             |                2 |             10 |
+|  unit_2/clock_10/encoded_audio_slow_reg[0] | unit_2/wave[0][4]_i_1_n_0                   |                                              |                4 |             12 |
+|  J_MIC3_Pin1_wire[2]                       | unit_2/wave[0][4]_i_1_n_0                   | unit_2/audio0/SR[0]                          |                1 |             12 |
+|  CLK100MHZ_IBUF_BUFG                       | unit_1/samples[0]_i_2_n_0                   | unit_1/encoded_peak[5]_i_1__1_n_0            |                1 |             12 |
+|  CLK100MHZ_IBUF_BUFG                       | unit_2/wave[0][4]_i_1_n_0                   | unit_2/encoded_peak[5]_i_1_n_0               |                1 |             12 |
+|  unit_5/clock_60/lives_reg[0][2]           |                                             | sw_IBUF[15]                                  |                2 |             12 |
+|  unit_5/clock_30/y0_reg[1]                 | unit_5/random_move/E[0]                     | unit_5/x_arrow[12]_i_1_n_0                   |                2 |             12 |
+|  unit_5/clock_30/y0_reg[1]                 |                                             |                                              |                5 |             12 |
+|  CLK100MHZ_IBUF_BUFG                       | unit_5/oled_data0                           | unit_5/encoded_peak[5]_i_1__0_n_0            |                2 |             12 |
+|  unit_5/clock_60/lives_reg[0][2]           | unit_5/y_arrow[6]_i_1_n_0                   |                                              |                4 |             14 |
+|  clk1                                      |                                             | unit_4/reset/hard_reset0                     |                4 |             14 |
+|  CLK100MHZ_IBUF_BUFG                       | unit_5/seg[6]_i_1__1_n_0                    |                                              |                2 |             14 |
+|  CLK100MHZ_IBUF_BUFG                       | unit_3/oled_data[15]_i_2__4_n_0             | unit_3/oled/SR[0]                            |                6 |             14 |
+|  unit_5/clock_60/lives_reg[0][2]           | unit_5/y_ball0                              |                                              |                4 |             14 |
+|  CLK100MHZ_IBUF_BUFG                       | unit_5/oled_data0                           |                                              |                5 |             18 |
+|  CLK100MHZ_IBUF_BUFG                       | unit_0/oled_data[15]_i_2__3_n_0             | unit_0/oled/SR[0]                            |                6 |             18 |
+|  CLK100MHZ_IBUF_BUFG                       | unit_4/maze1/an[3]_i_1__0_n_0               |                                              |                4 |             22 |
+|  CLK100MHZ_IBUF_BUFG                       | unit_2/seg[6]_i_1_n_0                       |                                              |                6 |             22 |
+|  unit_3/clock_10/new_clock                 |                                             |                                              |                3 |             24 |
+| ~unit_1/audio0/temp_reg[11]_0              |                                             |                                              |                3 |             24 |
+|  unit_1/clock_10/CLK                       |                                             |                                              |                3 |             24 |
+|  J_MIC3_Pin1_wire[2]                       | unit_2/wave[0][4]_i_1_n_0                   | unit_2/clear                                 |                3 |             24 |
+|  J_MIC3_Pin1_wire[2]                       | unit_2/audio0/peak_reg[0]                   | unit_2/peak[11]_i_1_n_0                      |                3 |             24 |
+|  unit_1/clock_20k/count2_reg[0]            |                                             |                                              |                3 |             24 |
+|  unit_1/clock_20k/count2_reg[0]            | unit_1/peak[11]_i_2__1_n_0                  | unit_1/peak[11]_i_1__1_n_0                   |                3 |             24 |
+|  unit_1/clock_20k/count2_reg[0]            | unit_1/samples[0]_i_2_n_0                   | unit_1/samples[0]_i_1__1_n_0                 |                3 |             24 |
+|  J_MIC3_Pin1_wire[2]                       |                                             |                                              |                5 |             24 |
+|  CLK100MHZ_IBUF_BUFG                       |                                             | J_MIC3_Pin1_wire[5]                          |                3 |             24 |
+|  J_MIC3_Pin1_wire[5]                       |                                             |                                              |                4 |             24 |
+|  J_MIC3_Pin1_wire[5]                       | unit_5/oled_data0                           | unit_5/samples[0]_i_1__0_n_0                 |                3 |             24 |
+|  J_MIC3_Pin1_wire[5]                       | unit_5/peak[11]_i_2__0_n_0                  | unit_5/peak[11]_i_1__0_n_0                   |                3 |             24 |
+|  CLK100MHZ_IBUF_BUFG                       |                                             | J_MIC3_Pin1_wire[2]                          |                3 |             24 |
+|  CLK100MHZ_IBUF_BUFG                       |                                             | unit_1/clock_20k/count2_reg[0]               |                3 |             24 |
+| ~unit_2/audio0/temp_reg[11]_0              |                                             |                                              |                4 |             24 |
+| ~unit_5/audio0/J_MIC3_Pin4_wire[5]         |                                             |                                              |                3 |             24 |
+|  unit_5/clock_60/lives_reg[0][2]           | unit_5/bang/E[0]                            | unit_5/x_arrow[12]_i_1_n_0                   |                5 |             26 |
+|  unit_0/clock_10/new_clock                 |                                             |                                              |                4 |             26 |
+|  unit_5/clock_10/new_clock                 |                                             |                                              |                5 |             26 |
+|  unit_5/clock_60/lives_reg[0][2]           |                                             | unit_5/x_arrow[12]_i_1_n_0                   |                3 |             26 |
+|  unit_1/clock_10/CLK                       | unit_1/samples[0]_i_2_n_0                   | unit_1/reset/SR[0]                           |                6 |             28 |
+|  CLK100MHZ_IBUF_BUFG                       | unit_2/wave[0][4]_i_1_n_0                   |                                              |                7 |             30 |
+|  unit_1/volume_bar_reg[15]_i_1_n_0         |                                             |                                              |                7 |             32 |
+|  CLK100MHZ_IBUF_BUFG                       | unit_2/led[15]_i_1_n_0                      |                                              |                9 |             32 |
+| ~clk6p25m_4                                |                                             | unit_1/blink/SR[0]                           |                6 |             34 |
+| ~clk6p25m_2                                |                                             | unit_4/blink/blinky_tick_0                   |                5 |             34 |
+| ~clk6p25m_1                                |                                             | unit_5/oled/frame_counter[16]_i_1__2_n_0     |                4 |             34 |
+| ~clk6p25m_3                                |                                             | unit_3/oled/frame_counter[16]_i_1__4_n_0     |                5 |             34 |
+| ~clk6p25m_0                                |                                             | unit_0/oled/frame_counter[16]_i_1__3_n_0     |                6 |             36 |
+| ~clk6p25m                                  |                                             | unit_2/oled/frame_counter[16]_i_1_n_0        |                5 |             36 |
+| ~clk6p25m_4                                | unit_1/oled/delay[0]_i_1__2_n_0             | unit_1/blink/SR[0]                           |                5 |             40 |
+| ~clk6p25m_2                                | unit_4/oled/delay[0]_i_1__0_n_0             | unit_4/blink/blinky_tick_0                   |                5 |             40 |
+| ~clk6p25m_0                                | unit_0/oled/delay[0]_i_1__3_n_0             |                                              |                5 |             40 |
+| ~clk6p25m_3                                | unit_3/oled/delay[0]_i_1__4_n_0             |                                              |                5 |             40 |
+| ~clk6p25m_1                                | unit_5/oled/delay[0]_i_1__1_n_0             |                                              |                5 |             40 |
+| ~clk6p25m                                  | unit_2/oled/delay[0]_i_1_n_0                |                                              |                5 |             40 |
+|  maze1/clk20                               |                                             |                                              |               27 |             56 |
+|  CLK100MHZ_IBUF_BUFG                       | seg[7]_i_2_n_0                              | led0                                         |                8 |             56 |
+|  CLK100MHZ_IBUF_BUFG                       |                                             | unit_2/clock_6p25m/count[0]_i_1__4_n_0       |                8 |             64 |
+|  CLK100MHZ_IBUF_BUFG                       |                                             | unit_2/clock_20k/clear__0                    |                8 |             64 |
+|  CLK100MHZ_IBUF_BUFG                       |                                             | unit_2/clock_30/count[0]_i_1__2_n_0          |                8 |             64 |
+|  CLK100MHZ_IBUF_BUFG                       |                                             | unit_2/clock_381/count[0]_i_1__1_n_0         |                8 |             64 |
+|  CLK100MHZ_IBUF_BUFG                       |                                             | unit_3/clock_10/clear                        |                8 |             64 |
+|  CLK100MHZ_IBUF_BUFG                       |                                             | unit_3/clock_6p25m/count[0]_i_1__27_n_0      |                8 |             64 |
+|  CLK100MHZ_IBUF_BUFG                       |                                             | unit_4/clock_6p25m/count[0]_i_1__12_n_0      |                8 |             64 |
+|  CLK100MHZ_IBUF_BUFG                       |                                             | unit_1/clock_10/clear                        |                8 |             64 |
+| ~clk6p25m_3                                | unit_3/oled/state                           |                                              |                8 |             64 |
+| ~clk6p25m_2                                | unit_4/oled/state_1                         | unit_4/blink/blinky_tick_0                   |                9 |             64 |
+|  CLK100MHZ_IBUF_BUFG                       |                                             | unit_5/clock_10/clear                        |                8 |             64 |
+|  CLK100MHZ_IBUF_BUFG                       |                                             | unit_1/clock_6p25m/count[0]_i_1__23_n_0      |                8 |             64 |
+|  CLK100MHZ_IBUF_BUFG                       |                                             | unit_5/clock_20k/count[0]_i_1__16_n_0        |                8 |             64 |
+|  CLK100MHZ_IBUF_BUFG                       |                                             | unit_4/maze1/clock_20/clear                  |                8 |             64 |
+| ~clk6p25m                                  | unit_2/oled/state                           |                                              |               11 |             64 |
+|  CLK100MHZ_IBUF_BUFG                       |                                             | unit_5/clock_3/count[0]_i_1__19_n_0          |                8 |             64 |
+|  CLK100MHZ_IBUF_BUFG                       |                                             | unit_5/clock_30/count[0]_i_1__18_n_0         |                8 |             64 |
+|  CLK100MHZ_IBUF_BUFG                       |                                             | unit_5/clock_381/count[0]_i_1__15_n_0        |                8 |             64 |
+|  CLK100MHZ_IBUF_BUFG                       |                                             | unit_4/clock_2/clear__0                      |                8 |             64 |
+|  CLK100MHZ_IBUF_BUFG                       |                                             | unit_5/clock_60/count[0]_i_1__17_n_0         |                8 |             64 |
+| ~clk6p25m_1                                | unit_5/oled/state                           |                                              |                7 |             64 |
+|  CLK100MHZ_IBUF_BUFG                       |                                             | unit_4/clock_10/count[0]_i_1__10_n_0         |                8 |             64 |
+|  CLK100MHZ_IBUF_BUFG                       |                                             | unit_5/clock_6p25m/count[0]_i_1__20_n_0      |                8 |             64 |
+|  clk1                                      | unit_4/maze1/COUNT_B                        | unit_4/reset/hard_reset0                     |                8 |             64 |
+|  CLK100MHZ_IBUF_BUFG                       |                                             | unit_4/clock_1/clear                         |                8 |             64 |
+|  CLK100MHZ_IBUF_BUFG                       |                                             | unit_2/clock_10/count[0]_i_1__0_n_0          |                8 |             64 |
+| ~clk6p25m_4                                | unit_1/oled/FSM_onehot_state[31]_i_1__4_n_0 | unit_1/blink/SR[0]                           |                8 |             64 |
+|  CLK100MHZ_IBUF_BUFG                       |                                             | unit_1/clock_20k/count[0]_i_1__22_n_0        |                8 |             64 |
+|  clk1                                      | unit_4/maze1/COUNT_A                        | unit_4/reset/hard_reset0                     |                8 |             64 |
+|  CLK100MHZ_IBUF_BUFG                       |                                             | unit_4/clock_381/count[0]_i_1__8_n_0         |                8 |             64 |
+|  CLK100MHZ_IBUF_BUFG                       |                                             | unit_4/clock_20/count[0]_i_1__9_n_0          |                8 |             64 |
+|  CLK100MHZ_IBUF_BUFG                       |                                             | unit_0/clock_6p25m/count[0]_i_1__25_n_0      |                8 |             64 |
+|  CLK100MHZ_IBUF_BUFG                       |                                             | unit_2/clock_3/count[0]_i_1__5_n_0           |                8 |             64 |
+| ~clk6p25m_0                                | unit_0/oled/state                           |                                              |                8 |             64 |
+|  CLK100MHZ_IBUF_BUFG                       |                                             | unit_0/clock_10/clear                        |                8 |             64 |
+|  CLK100MHZ_IBUF_BUFG                       |                                             |                                              |               35 |             84 |
+| ~clk6p25m                                  |                                             | unit_2/oled/spi_word[39]_i_1_n_0             |               17 |             90 |
+| ~clk6p25m_0                                |                                             | unit_0/oled/spi_word[39]_i_1__3_n_0          |               16 |             90 |
+| ~clk6p25m_3                                |                                             | unit_3/oled/spi_word[39]_i_1__4_n_0          |               15 |             90 |
+| ~clk6p25m_1                                |                                             | unit_5/oled/spi_word[39]_i_1__1_n_0          |               18 |             90 |
+| ~clk6p25m_4                                |                                             | unit_1/oled/spi_word_bit_count[5]_i_1__2_n_0 |               20 |             90 |
+| ~clk6p25m_2                                |                                             | unit_4/oled/spi_word[39]_i_1__0_n_0          |               16 |             90 |
+|  new_clock                                 | unit_2/wave[0][4]_i_1_n_0                   |                                              |              332 |           1620 |
+|  maze1/clk20                               | unit_4/maze1/maze[1][3]_i_1_n_0             |                                              |              422 |           2280 |
++--------------------------------------------+---------------------------------------------+----------------------------------------------+------------------+----------------+
+
+

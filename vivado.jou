@@ -1,0 +1,32 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Sat Apr  3 15:25:44 2021
+# Process ID: 7344
+# Current directory: C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8572 C:\Users\Van Binh\Downloads\S1_11_Nguyen Van Binh_Nigel Ng_Archive\SoundDisplay\SoundDisplay.xpr
+# Log file: C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/vivado.log
+# Journal file: C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.xpr}
+update_compile_order -fileset sources_1
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+reset_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.runs/impl_1/Top_Student.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.runs/impl_1/Top_Student.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+archive_project {C:/Users/Van Binh/Desktop/S1_11_Nguyen Van Binh_Nigel Ng_Archive.xpr.zip} -temp_dir {C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/.Xil/Vivado-7344-DESKTOP-EP3NTTP} -force -include_local_ip_cache

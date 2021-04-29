@@ -1,0 +1,1923 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Sat Apr  3 15:18:56 2021
+# Process ID: 4908
+# Current directory: C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.runs/synth_1
+# Command line: vivado.exe -log Top_Student.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Top_Student.tcl
+# Log file: C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.runs/synth_1/Top_Student.vds
+# Journal file: C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source Top_Student.tcl -notrace
+Command: synth_design -top Top_Student -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 3536 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 358.910 ; gain = 103.219
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Top_Student' [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/Top_Student.v:18]
+INFO: [Synth 8-6157] synthesizing module 'main_menu' [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/main_menu.v:23]
+INFO: [Synth 8-6157] synthesizing module 'clock_divider' [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/clock_divider.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'clock_divider' (1#1) [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/clock_divider.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Oled_Display' [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/Oled_Display.v:36]
+	Parameter Width bound to: 96 - type: integer 
+	Parameter Height bound to: 64 - type: integer 
+	Parameter PixelCount bound to: 6144 - type: integer 
+	Parameter PixelCountWidth bound to: 13 - type: integer 
+	Parameter ClkFreq bound to: 6250000 - type: integer 
+	Parameter FrameFreq bound to: 60 - type: integer 
+	Parameter FrameDiv bound to: 104166 - type: integer 
+	Parameter FrameDivWidth bound to: 17 - type: integer 
+	Parameter PowerDelay bound to: 20 - type: integer 
+	Parameter ResetDelay bound to: 3 - type: integer 
+	Parameter VccEnDelay bound to: 20 - type: integer 
+	Parameter StartupCompleteDelay bound to: 100 - type: integer 
+	Parameter MaxDelay bound to: 100 - type: integer 
+	Parameter MaxDelayCount bound to: 625000 - type: integer 
+	Parameter StateCount bound to: 32 - type: integer 
+	Parameter StateWidth bound to: 5 - type: integer 
+	Parameter PowerUp bound to: 5'b00000 
+	Parameter Reset bound to: 5'b00001 
+	Parameter ReleaseReset bound to: 5'b00011 
+	Parameter EnableDriver bound to: 5'b00010 
+	Parameter DisplayOff bound to: 5'b00110 
+	Parameter SetRemapDisplayFormat bound to: 5'b00111 
+	Parameter SetStartLine bound to: 5'b00101 
+	Parameter SetOffset bound to: 5'b00100 
+	Parameter SetNormalDisplay bound to: 5'b01100 
+	Parameter SetMultiplexRatio bound to: 5'b01101 
+	Parameter SetMasterConfiguration bound to: 5'b01111 
+	Parameter DisablePowerSave bound to: 5'b01110 
+	Parameter SetPhaseAdjust bound to: 5'b01010 
+	Parameter SetDisplayClock bound to: 5'b01011 
+	Parameter SetSecondPrechargeA bound to: 5'b01001 
+	Parameter SetSecondPrechargeB bound to: 5'b01000 
+	Parameter SetSecondPrechargeC bound to: 5'b11000 
+	Parameter SetPrechargeLevel bound to: 5'b11001 
+	Parameter SetVCOMH bound to: 5'b11011 
+	Parameter SetMasterCurrent bound to: 5'b11010 
+	Parameter SetContrastA bound to: 5'b11110 
+	Parameter SetContrastB bound to: 5'b11111 
+	Parameter SetContrastC bound to: 5'b11101 
+	Parameter DisableScrolling bound to: 5'b11100 
+	Parameter ClearScreen bound to: 5'b10100 
+	Parameter VccEn bound to: 5'b10101 
+	Parameter DisplayOn bound to: 5'b10111 
+	Parameter PrepareNextFrame bound to: 5'b10110 
+	Parameter SetColAddress bound to: 5'b10010 
+	Parameter SetRowAddress bound to: 5'b10011 
+	Parameter WaitNextFrame bound to: 5'b10001 
+	Parameter SendPixel bound to: 5'b10000 
+	Parameter SpiCommandMaxWidth bound to: 40 - type: integer 
+	Parameter SpiCommandBitCountWidth bound to: 6 - type: integer 
+INFO: [Synth 8-226] default block is never used [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/Oled_Display.v:124]
+INFO: [Synth 8-226] default block is never used [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/Oled_Display.v:201]
+WARNING: [Synth 8-693] zero replication count - replication ignored [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/Oled_Display.v:349]
+INFO: [Synth 8-6155] done synthesizing module 'Oled_Display' (2#1) [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/Oled_Display.v:36]
+WARNING: [Synth 8-689] width (1) of port connection 'teststate' does not match port width (5) of module 'Oled_Display' [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/main_menu.v:46]
+INFO: [Synth 8-6157] synthesizing module 'find_row_col' [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/find_row_col.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'find_row_col' (3#1) [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/find_row_col.v:23]
+INFO: [Synth 8-6157] synthesizing module 'single_pulse' [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/single_pulse.v:23]
+INFO: [Synth 8-6157] synthesizing module 'dff' [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/dff.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'dff' (4#1) [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/dff.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'single_pulse' (5#1) [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/single_pulse.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'main_menu' (6#1) [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/main_menu.v:23]
+INFO: [Synth 8-6157] synthesizing module 'nigel' [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/nigel.v:23]
+	Parameter row_start bound to: 8 - type: integer 
+	Parameter thicc bound to: 1 - type: integer 
+	Parameter gap bound to: 3 - type: integer 
+	Parameter border_colour bound to: 16'b0000000000011111 
+	Parameter vol_high bound to: 16'b1111100000000000 
+	Parameter vol_mid bound to: 16'b1111111111100000 
+	Parameter vol_low bound to: 16'b0000011111100000 
+INFO: [Synth 8-6157] synthesizing module 'Audio_Capture' [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/Audio_Capture.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'Audio_Capture' (7#1) [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/Audio_Capture.v:25]
+WARNING: [Synth 8-689] width (1) of port connection 'teststate' does not match port width (5) of module 'Oled_Display' [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/nigel.v:97]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/nigel.v:137]
+WARNING: [Synth 8-6090] variable 'col_left_limit' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/nigel.v:176]
+WARNING: [Synth 8-6090] variable 'col_right_limit' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/nigel.v:176]
+WARNING: [Synth 8-6014] Unused sequential element current_reg was removed.  [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/nigel.v:67]
+INFO: [Synth 8-6155] done synthesizing module 'nigel' (8#1) [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/nigel.v:23]
+INFO: [Synth 8-6157] synthesizing module 'audio_binh' [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/audio_binh.v:23]
+WARNING: [Synth 8-689] width (1) of port connection 'teststate' does not match port width (5) of module 'Oled_Display' [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/audio_binh.v:65]
+INFO: [Synth 8-6157] synthesizing module 'random' [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/random.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'random' (9#1) [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/random.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/audio_binh.v:201]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/audio_binh.v:212]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/audio_binh.v:223]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/audio_binh.v:234]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/audio_binh.v:245]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/audio_binh.v:256]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/audio_binh.v:267]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/audio_binh.v:278]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/audio_binh.v:289]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/audio_binh.v:300]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/audio_binh.v:311]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/audio_binh.v:322]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/audio_binh.v:333]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/audio_binh.v:344]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/audio_binh.v:355]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/audio_binh.v:366]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/audio_binh.v:377]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/audio_binh.v:197]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/audio_binh.v:392]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/audio_binh.v:403]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/audio_binh.v:414]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/audio_binh.v:425]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/audio_binh.v:436]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/audio_binh.v:447]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/audio_binh.v:458]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/audio_binh.v:469]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/audio_binh.v:480]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/audio_binh.v:491]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/audio_binh.v:502]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/audio_binh.v:513]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/audio_binh.v:524]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/audio_binh.v:535]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/audio_binh.v:546]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/audio_binh.v:557]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/audio_binh.v:568]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/audio_binh.v:388]
+WARNING: [Synth 8-6090] variable 'oled_data' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/audio_binh.v:592]
+WARNING: [Synth 8-6090] variable 'oled_data' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/audio_binh.v:593]
+WARNING: [Synth 8-6090] variable 'oled_data' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/audio_binh.v:594]
+WARNING: [Synth 8-6090] variable 'oled_data' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/audio_binh.v:595]
+WARNING: [Synth 8-6090] variable 'oled_data' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/audio_binh.v:596]
+WARNING: [Synth 8-6090] variable 'oled_data' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/audio_binh.v:597]
+WARNING: [Synth 8-6090] variable 'oled_data' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/audio_binh.v:598]
+WARNING: [Synth 8-6090] variable 'oled_data' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/audio_binh.v:599]
+WARNING: [Synth 8-6090] variable 'oled_data' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/audio_binh.v:601]
+WARNING: [Synth 8-6090] variable 'oled_data' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/audio_binh.v:602]
+WARNING: [Synth 8-6090] variable 'oled_data' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/audio_binh.v:611]
+WARNING: [Synth 8-6090] variable 'oled_data' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/audio_binh.v:612]
+WARNING: [Synth 8-6090] variable 'oled_data' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/audio_binh.v:613]
+WARNING: [Synth 8-6090] variable 'oled_data' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/audio_binh.v:614]
+WARNING: [Synth 8-6090] variable 'oled_data' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/audio_binh.v:615]
+WARNING: [Synth 8-6090] variable 'oled_data' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/audio_binh.v:616]
+WARNING: [Synth 8-6090] variable 'oled_data' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/audio_binh.v:617]
+WARNING: [Synth 8-6090] variable 'oled_data' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/audio_binh.v:618]
+WARNING: [Synth 8-6090] variable 'oled_data' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/audio_binh.v:619]
+WARNING: [Synth 8-6090] variable 'oled_data' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/audio_binh.v:620]
+WARNING: [Synth 8-6090] variable 'oled_data' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/audio_binh.v:621]
+WARNING: [Synth 8-6090] variable 'oled_data' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/audio_binh.v:622]
+WARNING: [Synth 8-6090] variable 'oled_data' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/audio_binh.v:623]
+WARNING: [Synth 8-6090] variable 'oled_data' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/audio_binh.v:626]
+WARNING: [Synth 8-6090] variable 'oled_data' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/audio_binh.v:627]
+WARNING: [Synth 8-6090] variable 'oled_data' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/audio_binh.v:628]
+WARNING: [Synth 8-6090] variable 'oled_data' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/audio_binh.v:629]
+WARNING: [Synth 8-6090] variable 'oled_data' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/audio_binh.v:630]
+WARNING: [Synth 8-6090] variable 'oled_data' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/audio_binh.v:631]
+WARNING: [Synth 8-6090] variable 'oled_data' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/audio_binh.v:632]
+WARNING: [Synth 8-6090] variable 'oled_data' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/audio_binh.v:633]
+WARNING: [Synth 8-6090] variable 'oled_data' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/audio_binh.v:634]
+WARNING: [Synth 8-6090] variable 'oled_data' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/audio_binh.v:635]
+WARNING: [Synth 8-6090] variable 'oled_data' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/audio_binh.v:636]
+WARNING: [Synth 8-6014] Unused sequential element current_reg was removed.  [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/audio_binh.v:91]
+INFO: [Synth 8-6155] done synthesizing module 'audio_binh' (10#1) [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/audio_binh.v:23]
+INFO: [Synth 8-6157] synthesizing module 'game_menu' [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/game_menu.v:23]
+WARNING: [Synth 8-689] width (1) of port connection 'teststate' does not match port width (5) of module 'Oled_Display' [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/game_menu.v:43]
+INFO: [Synth 8-6155] done synthesizing module 'game_menu' (11#1) [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/game_menu.v:23]
+INFO: [Synth 8-6157] synthesizing module 'maze' [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/maze.v:23]
+	Parameter obstacle bound to: 1 - type: integer 
+	Parameter checkpoint bound to: 2 - type: integer 
+	Parameter row_a bound to: 57 - type: integer 
+	Parameter col_a bound to: 61 - type: integer 
+	Parameter row_b bound to: 58 - type: integer 
+	Parameter col_b bound to: 62 - type: integer 
+	Parameter row_c bound to: 59 - type: integer 
+	Parameter col_c bound to: 63 - type: integer 
+	Parameter top_left bound to: 16'b0000000000000000 
+	Parameter top_mid bound to: 16'b0000011111100000 
+	Parameter top_right bound to: 16'b0000000000000000 
+	Parameter mid_left bound to: 16'b0000011111100000 
+	Parameter mid_mid bound to: 16'b0111111111111011 
+	Parameter mid_right bound to: 16'b0000011111100000 
+	Parameter bot_left bound to: 16'b0000000000000000 
+	Parameter bot_mid bound to: 16'b0000011111100000 
+	Parameter bot_right bound to: 16'b0000000000000000 
+WARNING: [Synth 8-689] width (1) of port connection 'teststate' does not match port width (5) of module 'Oled_Display' [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/maze.v:51]
+INFO: [Synth 8-6157] synthesizing module 'maze_logic' [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/maze_logic.v:3]
+	Parameter end_rowa bound to: 57 - type: integer 
+	Parameter end_rowb bound to: 58 - type: integer 
+	Parameter end_rowc bound to: 59 - type: integer 
+	Parameter end_cola bound to: 61 - type: integer 
+	Parameter end_colb bound to: 62 - type: integer 
+	Parameter end_colc bound to: 63 - type: integer 
+	Parameter star_rowa bound to: 3 - type: integer 
+	Parameter star_rowb bound to: 4 - type: integer 
+	Parameter star_rowc bound to: 5 - type: integer 
+	Parameter star_cola bound to: 0 - type: integer 
+	Parameter star_colb bound to: 1 - type: integer 
+	Parameter star_colc bound to: 2 - type: integer 
+	Parameter obstacle bound to: 1 - type: integer 
+	Parameter checkpoint bound to: 2 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/maze_logic.v:72]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/maze_logic.v:86]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/maze_logic.v:70]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/maze_logic.v:104]
+WARNING: [Synth 8-6090] variable 'row' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/maze_logic.v:233]
+WARNING: [Synth 8-6090] variable 'col' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/maze_logic.v:238]
+WARNING: [Synth 8-6090] variable 'col' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/maze_logic.v:247]
+WARNING: [Synth 8-6090] variable 'row' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/maze_logic.v:252]
+WARNING: [Synth 8-6090] variable 'col' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/maze_logic.v:286]
+WARNING: [Synth 8-6090] variable 'col' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/maze_logic.v:287]
+WARNING: [Synth 8-6090] variable 'row' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/maze_logic.v:288]
+WARNING: [Synth 8-6090] variable 'row' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/maze_logic.v:291]
+WARNING: [Synth 8-6090] variable 'col' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/maze_logic.v:292]
+WARNING: [Synth 8-6090] variable 'col' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/maze_logic.v:292]
+WARNING: [Synth 8-6090] variable 'row' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/maze_logic.v:293]
+WARNING: [Synth 8-6090] variable 'col' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/maze_logic.v:294]
+WARNING: [Synth 8-6090] variable 'row' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/maze_logic.v:295]
+WARNING: [Synth 8-6090] variable 'col' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/maze_logic.v:295]
+WARNING: [Synth 8-6090] variable 'col' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/maze_logic.v:296]
+WARNING: [Synth 8-6090] variable 'row' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/maze_logic.v:296]
+WARNING: [Synth 8-6090] variable 'row' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/maze_logic.v:297]
+WARNING: [Synth 8-6090] variable 'col' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/maze_logic.v:297]
+WARNING: [Synth 8-6090] variable 'col' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/maze_logic.v:298]
+WARNING: [Synth 8-6090] variable 'row' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/maze_logic.v:298]
+WARNING: [Synth 8-6090] variable 'row' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/maze_logic.v:299]
+WARNING: [Synth 8-6090] variable 'col' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/maze_logic.v:299]
+WARNING: [Synth 8-6090] variable 'col' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/maze_logic.v:300]
+WARNING: [Synth 8-6090] variable 'row' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/maze_logic.v:301]
+WARNING: [Synth 8-6090] variable 'row' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/maze_logic.v:301]
+WARNING: [Synth 8-6090] variable 'col' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/maze_logic.v:301]
+WARNING: [Synth 8-6090] variable 'col' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/maze_logic.v:303]
+WARNING: [Synth 8-6090] variable 'col' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/maze_logic.v:304]
+WARNING: [Synth 8-6090] variable 'row' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/maze_logic.v:305]
+WARNING: [Synth 8-6090] variable 'col' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/maze_logic.v:305]
+WARNING: [Synth 8-6090] variable 'col' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/maze_logic.v:306]
+WARNING: [Synth 8-6090] variable 'row' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/maze_logic.v:306]
+WARNING: [Synth 8-6090] variable 'row' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/maze_logic.v:307]
+WARNING: [Synth 8-6090] variable 'col' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/maze_logic.v:307]
+WARNING: [Synth 8-6090] variable 'col' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/maze_logic.v:308]
+WARNING: [Synth 8-6090] variable 'row' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/maze_logic.v:308]
+WARNING: [Synth 8-6090] variable 'row' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/maze_logic.v:309]
+WARNING: [Synth 8-6090] variable 'col' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/maze_logic.v:309]
+WARNING: [Synth 8-6090] variable 'col' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/maze_logic.v:310]
+WARNING: [Synth 8-6090] variable 'row' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/maze_logic.v:316]
+WARNING: [Synth 8-6090] variable 'row' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/maze_logic.v:317]
+WARNING: [Synth 8-6090] variable 'col' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/maze_logic.v:318]
+WARNING: [Synth 8-6090] variable 'col' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/maze_logic.v:321]
+WARNING: [Synth 8-6090] variable 'row' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/maze_logic.v:322]
+WARNING: [Synth 8-6090] variable 'row' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/maze_logic.v:322]
+WARNING: [Synth 8-6090] variable 'col' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/maze_logic.v:323]
+WARNING: [Synth 8-6090] variable 'row' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/maze_logic.v:324]
+WARNING: [Synth 8-6090] variable 'col' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/maze_logic.v:325]
+WARNING: [Synth 8-6090] variable 'row' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/maze_logic.v:325]
+WARNING: [Synth 8-6090] variable 'row' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/maze_logic.v:326]
+WARNING: [Synth 8-6090] variable 'col' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/maze_logic.v:326]
+WARNING: [Synth 8-6090] variable 'col' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/maze_logic.v:327]
+WARNING: [Synth 8-6090] variable 'row' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/maze_logic.v:327]
+WARNING: [Synth 8-6090] variable 'row' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/maze_logic.v:328]
+WARNING: [Synth 8-6090] variable 'col' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/maze_logic.v:328]
+WARNING: [Synth 8-6090] variable 'col' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/maze_logic.v:329]
+WARNING: [Synth 8-6090] variable 'row' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/maze_logic.v:329]
+WARNING: [Synth 8-6090] variable 'row' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/maze_logic.v:330]
+WARNING: [Synth 8-6090] variable 'col' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/maze_logic.v:331]
+WARNING: [Synth 8-6090] variable 'col' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/maze_logic.v:331]
+WARNING: [Synth 8-6090] variable 'row' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/maze_logic.v:331]
+WARNING: [Synth 8-6090] variable 'row' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/maze_logic.v:333]
+WARNING: [Synth 8-6090] variable 'row' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/maze_logic.v:334]
+WARNING: [Synth 8-6090] variable 'col' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/maze_logic.v:335]
+INFO: [Common 17-14] Message 'Synth 8-6090' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-6014] Unused sequential element new_row_reg was removed.  [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/maze_logic.v:273]
+WARNING: [Synth 8-6014] Unused sequential element new_col_reg was removed.  [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/maze_logic.v:274]
+WARNING: [Synth 8-6014] Unused sequential element maze_trans_reg[0] was removed.  [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/maze_logic.v:263]
+WARNING: [Synth 8-6014] Unused sequential element maze_trans_reg[1] was removed.  [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/maze_logic.v:263]
+WARNING: [Synth 8-6014] Unused sequential element maze_trans_reg[2] was removed.  [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/maze_logic.v:263]
+WARNING: [Synth 8-6014] Unused sequential element maze_trans_reg[3] was removed.  [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/maze_logic.v:263]
+WARNING: [Synth 8-6014] Unused sequential element maze_trans_reg[4] was removed.  [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/maze_logic.v:263]
+WARNING: [Synth 8-6014] Unused sequential element maze_trans_reg[5] was removed.  [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/maze_logic.v:263]
+WARNING: [Synth 8-6014] Unused sequential element maze_trans_reg[6] was removed.  [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/maze_logic.v:263]
+WARNING: [Synth 8-6014] Unused sequential element maze_trans_reg[7] was removed.  [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/maze_logic.v:263]
+WARNING: [Synth 8-6014] Unused sequential element maze_trans_reg[8] was removed.  [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/maze_logic.v:263]
+WARNING: [Synth 8-6014] Unused sequential element maze_trans_reg[9] was removed.  [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/maze_logic.v:263]
+WARNING: [Synth 8-6014] Unused sequential element maze_trans_reg[10] was removed.  [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/maze_logic.v:263]
+WARNING: [Synth 8-6014] Unused sequential element maze_trans_reg[11] was removed.  [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/maze_logic.v:263]
+WARNING: [Synth 8-6014] Unused sequential element maze_trans_reg[12] was removed.  [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/maze_logic.v:263]
+WARNING: [Synth 8-6014] Unused sequential element maze_trans_reg[13] was removed.  [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/maze_logic.v:263]
+WARNING: [Synth 8-6014] Unused sequential element maze_trans_reg[14] was removed.  [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/maze_logic.v:263]
+WARNING: [Synth 8-6014] Unused sequential element maze_trans_reg[15] was removed.  [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/maze_logic.v:263]
+WARNING: [Synth 8-6014] Unused sequential element maze_trans_reg[16] was removed.  [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/maze_logic.v:263]
+WARNING: [Synth 8-6014] Unused sequential element maze_trans_reg[17] was removed.  [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/maze_logic.v:263]
+WARNING: [Synth 8-6014] Unused sequential element maze_trans_reg[18] was removed.  [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/maze_logic.v:263]
+WARNING: [Synth 8-6014] Unused sequential element maze_trans_reg[19] was removed.  [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/maze_logic.v:263]
+WARNING: [Synth 8-6014] Unused sequential element maze_trans_reg[20] was removed.  [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/maze_logic.v:263]
+WARNING: [Synth 8-6014] Unused sequential element maze_trans_reg[21] was removed.  [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/maze_logic.v:263]
+WARNING: [Synth 8-6014] Unused sequential element maze_trans_reg[22] was removed.  [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/maze_logic.v:263]
+WARNING: [Synth 8-6014] Unused sequential element maze_trans_reg[23] was removed.  [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/maze_logic.v:263]
+WARNING: [Synth 8-6014] Unused sequential element maze_trans_reg[24] was removed.  [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/maze_logic.v:263]
+WARNING: [Synth 8-6014] Unused sequential element maze_trans_reg[25] was removed.  [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/maze_logic.v:263]
+WARNING: [Synth 8-6014] Unused sequential element maze_trans_reg[26] was removed.  [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/maze_logic.v:263]
+WARNING: [Synth 8-6014] Unused sequential element maze_trans_reg[27] was removed.  [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/maze_logic.v:263]
+WARNING: [Synth 8-6014] Unused sequential element maze_trans_reg[28] was removed.  [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/maze_logic.v:263]
+WARNING: [Synth 8-6014] Unused sequential element maze_trans_reg[29] was removed.  [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/maze_logic.v:263]
+WARNING: [Synth 8-6014] Unused sequential element maze_trans_reg[30] was removed.  [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/maze_logic.v:263]
+WARNING: [Synth 8-6014] Unused sequential element maze_trans_reg[31] was removed.  [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/maze_logic.v:263]
+WARNING: [Synth 8-6014] Unused sequential element maze_trans_reg[32] was removed.  [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/maze_logic.v:263]
+WARNING: [Synth 8-6014] Unused sequential element maze_trans_reg[33] was removed.  [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/maze_logic.v:263]
+WARNING: [Synth 8-6014] Unused sequential element maze_trans_reg[34] was removed.  [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/maze_logic.v:263]
+WARNING: [Synth 8-6014] Unused sequential element maze_trans_reg[35] was removed.  [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/maze_logic.v:263]
+WARNING: [Synth 8-6014] Unused sequential element maze_trans_reg[36] was removed.  [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/maze_logic.v:263]
+WARNING: [Synth 8-6014] Unused sequential element maze_trans_reg[37] was removed.  [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/maze_logic.v:263]
+WARNING: [Synth 8-6014] Unused sequential element maze_trans_reg[38] was removed.  [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/maze_logic.v:263]
+WARNING: [Synth 8-6014] Unused sequential element maze_trans_reg[39] was removed.  [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/maze_logic.v:263]
+WARNING: [Synth 8-6014] Unused sequential element maze_trans_reg[40] was removed.  [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/maze_logic.v:263]
+WARNING: [Synth 8-6014] Unused sequential element maze_trans_reg[41] was removed.  [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/maze_logic.v:263]
+WARNING: [Synth 8-6014] Unused sequential element maze_trans_reg[42] was removed.  [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/maze_logic.v:263]
+WARNING: [Synth 8-6014] Unused sequential element maze_trans_reg[43] was removed.  [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/maze_logic.v:263]
+WARNING: [Synth 8-6014] Unused sequential element maze_trans_reg[44] was removed.  [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/maze_logic.v:263]
+WARNING: [Synth 8-6014] Unused sequential element maze_trans_reg[45] was removed.  [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/maze_logic.v:263]
+WARNING: [Synth 8-6014] Unused sequential element maze_trans_reg[46] was removed.  [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/maze_logic.v:263]
+WARNING: [Synth 8-6014] Unused sequential element maze_trans_reg[47] was removed.  [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/maze_logic.v:263]
+WARNING: [Synth 8-6014] Unused sequential element maze_trans_reg[48] was removed.  [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/maze_logic.v:263]
+WARNING: [Synth 8-6014] Unused sequential element maze_trans_reg[49] was removed.  [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/maze_logic.v:263]
+WARNING: [Synth 8-6014] Unused sequential element maze_trans_reg[50] was removed.  [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/maze_logic.v:263]
+WARNING: [Synth 8-6014] Unused sequential element maze_trans_reg[51] was removed.  [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/maze_logic.v:263]
+WARNING: [Synth 8-6014] Unused sequential element maze_trans_reg[52] was removed.  [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/maze_logic.v:263]
+WARNING: [Synth 8-6014] Unused sequential element maze_trans_reg[53] was removed.  [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/maze_logic.v:263]
+WARNING: [Synth 8-6014] Unused sequential element maze_trans_reg[54] was removed.  [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/maze_logic.v:263]
+WARNING: [Synth 8-6014] Unused sequential element maze_trans_reg[55] was removed.  [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/maze_logic.v:263]
+WARNING: [Synth 8-6014] Unused sequential element maze_trans_reg[56] was removed.  [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/maze_logic.v:263]
+WARNING: [Synth 8-6014] Unused sequential element maze_trans_reg[57] was removed.  [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/maze_logic.v:263]
+WARNING: [Synth 8-6014] Unused sequential element maze_trans_reg[58] was removed.  [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/maze_logic.v:263]
+WARNING: [Synth 8-6014] Unused sequential element maze_trans_reg[59] was removed.  [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/maze_logic.v:263]
+WARNING: [Synth 8-6014] Unused sequential element maze_trans_reg[60] was removed.  [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/maze_logic.v:263]
+WARNING: [Synth 8-6014] Unused sequential element maze_trans_reg[61] was removed.  [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/maze_logic.v:263]
+WARNING: [Synth 8-6014] Unused sequential element maze_trans_reg[62] was removed.  [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/maze_logic.v:263]
+WARNING: [Synth 8-6014] Unused sequential element maze_trans_reg[63] was removed.  [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/maze_logic.v:263]
+INFO: [Synth 8-6155] done synthesizing module 'maze_logic' (12#1) [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/maze_logic.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'maze' (13#1) [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/maze.v:23]
+INFO: [Synth 8-6157] synthesizing module 'shooting_game' [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/shooting_game.v:23]
+	Parameter blood bound to: 5 - type: integer 
+WARNING: [Synth 8-689] width (1) of port connection 'teststate' does not match port width (5) of module 'Oled_Display' [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/shooting_game.v:58]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/shooting_game.v:217]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/shooting_game.v:227]
+WARNING: [Synth 8-6014] Unused sequential element current_reg was removed.  [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/shooting_game.v:76]
+INFO: [Synth 8-6155] done synthesizing module 'shooting_game' (14#1) [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/shooting_game.v:23]
+WARNING: [Synth 8-3848] Net led_wire[1] in module/entity Top_Student does not have driver. [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/Top_Student.v:80]
+WARNING: [Synth 8-3848] Net seg_wire[1] in module/entity Top_Student does not have driver. [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/Top_Student.v:81]
+WARNING: [Synth 8-3848] Net an_wire[1] in module/entity Top_Student does not have driver. [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/Top_Student.v:82]
+INFO: [Synth 8-6155] done synthesizing module 'Top_Student' (15#1) [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/Top_Student.v:18]
+WARNING: [Synth 8-3331] design shooting_game has unconnected port JC[2]
+WARNING: [Synth 8-3331] design shooting_game has unconnected port sw[14]
+WARNING: [Synth 8-3331] design shooting_game has unconnected port sw[13]
+WARNING: [Synth 8-3331] design shooting_game has unconnected port sw[12]
+WARNING: [Synth 8-3331] design shooting_game has unconnected port sw[11]
+WARNING: [Synth 8-3331] design shooting_game has unconnected port sw[10]
+WARNING: [Synth 8-3331] design shooting_game has unconnected port sw[9]
+WARNING: [Synth 8-3331] design shooting_game has unconnected port sw[8]
+WARNING: [Synth 8-3331] design shooting_game has unconnected port sw[7]
+WARNING: [Synth 8-3331] design shooting_game has unconnected port sw[6]
+WARNING: [Synth 8-3331] design shooting_game has unconnected port sw[5]
+WARNING: [Synth 8-3331] design shooting_game has unconnected port sw[4]
+WARNING: [Synth 8-3331] design shooting_game has unconnected port sw[3]
+WARNING: [Synth 8-3331] design shooting_game has unconnected port sw[2]
+WARNING: [Synth 8-3331] design shooting_game has unconnected port sw[1]
+WARNING: [Synth 8-3331] design shooting_game has unconnected port btnL
+WARNING: [Synth 8-3331] design shooting_game has unconnected port btnR
+WARNING: [Synth 8-3331] design maze_logic has unconnected port BTNC_sig
+WARNING: [Synth 8-3331] design maze_logic has unconnected port clk_10hz
+WARNING: [Synth 8-3331] design maze has unconnected port JC[2]
+WARNING: [Synth 8-3331] design maze has unconnected port sw[14]
+WARNING: [Synth 8-3331] design maze has unconnected port sw[13]
+WARNING: [Synth 8-3331] design maze has unconnected port sw[12]
+WARNING: [Synth 8-3331] design maze has unconnected port sw[11]
+WARNING: [Synth 8-3331] design maze has unconnected port sw[10]
+WARNING: [Synth 8-3331] design maze has unconnected port sw[9]
+WARNING: [Synth 8-3331] design maze has unconnected port sw[8]
+WARNING: [Synth 8-3331] design maze has unconnected port sw[7]
+WARNING: [Synth 8-3331] design maze has unconnected port sw[6]
+WARNING: [Synth 8-3331] design maze has unconnected port sw[5]
+WARNING: [Synth 8-3331] design maze has unconnected port sw[4]
+WARNING: [Synth 8-3331] design maze has unconnected port sw[3]
+WARNING: [Synth 8-3331] design maze has unconnected port sw[2]
+WARNING: [Synth 8-3331] design maze has unconnected port sw[1]
+WARNING: [Synth 8-3331] design game_menu has unconnected port JC[2]
+WARNING: [Synth 8-3331] design audio_binh has unconnected port JC[2]
+WARNING: [Synth 8-3331] design audio_binh has unconnected port sw[14]
+WARNING: [Synth 8-3331] design audio_binh has unconnected port sw[13]
+WARNING: [Synth 8-3331] design audio_binh has unconnected port sw[12]
+WARNING: [Synth 8-3331] design audio_binh has unconnected port sw[11]
+WARNING: [Synth 8-3331] design audio_binh has unconnected port sw[10]
+WARNING: [Synth 8-3331] design audio_binh has unconnected port sw[9]
+WARNING: [Synth 8-3331] design audio_binh has unconnected port sw[8]
+WARNING: [Synth 8-3331] design audio_binh has unconnected port sw[7]
+WARNING: [Synth 8-3331] design audio_binh has unconnected port sw[6]
+WARNING: [Synth 8-3331] design audio_binh has unconnected port sw[5]
+WARNING: [Synth 8-3331] design audio_binh has unconnected port sw[4]
+WARNING: [Synth 8-3331] design audio_binh has unconnected port sw[3]
+WARNING: [Synth 8-3331] design nigel has unconnected port JC[2]
+WARNING: [Synth 8-3331] design main_menu has unconnected port JC[2]
+WARNING: [Synth 8-3331] design main_menu has unconnected port sw[15]
+WARNING: [Synth 8-3331] design main_menu has unconnected port sw[14]
+WARNING: [Synth 8-3331] design main_menu has unconnected port sw[13]
+WARNING: [Synth 8-3331] design main_menu has unconnected port sw[12]
+WARNING: [Synth 8-3331] design main_menu has unconnected port sw[11]
+WARNING: [Synth 8-3331] design main_menu has unconnected port sw[10]
+WARNING: [Synth 8-3331] design main_menu has unconnected port sw[9]
+WARNING: [Synth 8-3331] design main_menu has unconnected port sw[8]
+WARNING: [Synth 8-3331] design main_menu has unconnected port sw[7]
+WARNING: [Synth 8-3331] design main_menu has unconnected port sw[6]
+WARNING: [Synth 8-3331] design main_menu has unconnected port sw[5]
+WARNING: [Synth 8-3331] design main_menu has unconnected port sw[4]
+WARNING: [Synth 8-3331] design main_menu has unconnected port sw[3]
+WARNING: [Synth 8-3331] design main_menu has unconnected port sw[2]
+WARNING: [Synth 8-3331] design main_menu has unconnected port sw[1]
+WARNING: [Synth 8-3331] design main_menu has unconnected port sw[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 673.258 ; gain = 417.566
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 673.258 ; gain = 417.566
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 673.258 ; gain = 417.566
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/constrs_1/new/Basys3_Master.xdc]
+Finished Parsing XDC File [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/constrs_1/new/Basys3_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/constrs_1/new/Basys3_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Top_Student_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Top_Student_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 1950.031 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:58 ; elapsed = 00:01:00 . Memory (MB): peak = 1953.152 ; gain = 1697.461
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5580] Multithreading enabled for synth_design using a maximum of 2 processes.
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:58 ; elapsed = 00:01:01 . Memory (MB): peak = 1953.152 ; gain = 1697.461
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:59 ; elapsed = 00:01:01 . Memory (MB): peak = 1953.152 ; gain = 1697.461
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "new_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'Oled_Display'
+INFO: [Synth 8-5546] ROM "fsm_next_state0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "fsm_next_state0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "fsm_next_state0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "oled_data" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "oled_data" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "box_menu0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_out" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_out" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "samples" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "volume_bar" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "col_left_limit" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_out" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "samples" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "volume_bar" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "col_left_limit" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "wave" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_out" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "led" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "led" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "oled_data" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "wave_color" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "box_game" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "oled_data" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "COUNT_A0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "game_over" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "an" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "an" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "dir" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "dir" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_out" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "oled_data" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "oled_data" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "oled_data" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "oled_data" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "oled_data" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/shooting_game.v:114]
+INFO: [Synth 8-5544] ROM "samples" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "y_arrow" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "y_arrow" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "y_ball" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "y_ball" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "state_out" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "y0" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "oled_data" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "samples" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "y_arrow" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "y_arrow" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "y_ball" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "y_ball" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "state_out" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "y0" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "oled_data" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "an" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "seg" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "oled_data" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "oled_data" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 PowerUp | 00000000100000000000000000000000 |                            00000
+                   Reset | 00000000000100000000000000000000 |                            00001
+            ReleaseReset | 00000000000000000000100000000000 |                            00011
+            EnableDriver | 00000000000000000001000000000000 |                            00010
+              DisplayOff | 00000000000000000100000000000000 |                            00110
+   SetRemapDisplayFormat | 00000100000000000000000000000000 |                            00111
+            SetStartLine | 00001000000000000000000000000000 |                            00101
+               SetOffset | 10000000000000000000000000000000 |                            00100
+        SetNormalDisplay | 00000000000000000000000010000000 |                            01100
+       SetMultiplexRatio | 00000000000000000000000000100000 |                            01101
+  SetMasterConfiguration | 00000000000000000000000001000000 |                            01111
+        DisablePowerSave | 00000000000000000000000000000100 |                            01110
+          SetPhaseAdjust | 00000000000000000000000000001000 |                            01010
+         SetDisplayClock | 00000000001000000000000000000000 |                            01011
+     SetSecondPrechargeA | 00000000010000000000000000000000 |                            01001
+     SetSecondPrechargeB | 01000000000000000000000000000000 |                            01000
+     SetSecondPrechargeC | 00000010000000000000000000000000 |                            11000
+       SetPrechargeLevel | 00000001000000000000000000000000 |                            11001
+                SetVCOMH | 00000000000000010000000000000000 |                            11011
+        SetMasterCurrent | 00000000000000100000000000000000 |                            11010
+            SetContrastA | 00000000000001000000000000000000 |                            11110
+            SetContrastB | 00100000000000000000000000000000 |                            11111
+            SetContrastC | 00000000000000000000000000000001 |                            11101
+        DisableScrolling | 00000000000000000000000000000010 |                            11100
+             ClearScreen | 00000000000000000000000000010000 |                            10100
+                   VccEn | 00010000000000000000000000000000 |                            10101
+               DisplayOn | 00000000000010000000000000000000 |                            10111
+        PrepareNextFrame | 00000000000000001000000000000000 |                            10110
+           SetColAddress | 00000000000000000000010000000000 |                            10010
+           SetRowAddress | 00000000000000000000000100000000 |                            10011
+           WaitNextFrame | 00000000000000000000001000000000 |                            10001
+               SendPixel | 00000000000000000010000000000000 |                            10000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'Oled_Display'
+WARNING: [Synth 8-327] inferring latch for variable 'volume_bar_reg' [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/nigel.v:138]
+WARNING: [Synth 8-327] inferring latch for variable 'state_reg' [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/Top_Student.v:36]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:20 ; elapsed = 00:01:23 . Memory (MB): peak = 1953.152 ; gain = 1697.461
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'unit_4/solve' (find_row_col) to 'unit_4/row_col'
+
+Report RTL Partitions: 
++------+------------------+------------+----------+
+|      |RTL Partition     |Replication |Instances |
++------+------------------+------------+----------+
+|1     |audio_binh__GB0   |           1|     19072|
+|2     |audio_binh__GB1   |           1|     15390|
+|3     |maze__GB0         |           1|     36115|
+|4     |maze__GB1         |           1|     14812|
+|5     |Top_Student__GCB0 |           1|     45146|
+|6     |Top_Student__GCB1 |           1|     23205|
++------+------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 11    
+	   2 Input     17 Bit       Adders := 6     
+	   3 Input     14 Bit       Adders := 66    
+	   2 Input     14 Bit       Adders := 27    
+	   2 Input     13 Bit       Adders := 6     
+	   2 Input      8 Bit       Adders := 4     
+	   2 Input      7 Bit       Adders := 139   
+	   3 Input      7 Bit       Adders := 2     
+	   2 Input      6 Bit       Adders := 16    
+	   2 Input      3 Bit       Adders := 5     
+	   2 Input      2 Bit       Adders := 2     
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	               64 Bit    Registers := 64    
+	               40 Bit    Registers := 6     
+	               17 Bit    Registers := 6     
+	               16 Bit    Registers := 8     
+	               13 Bit    Registers := 6     
+	               12 Bit    Registers := 9     
+	                8 Bit    Registers := 4     
+	                7 Bit    Registers := 2     
+	                6 Bit    Registers := 14    
+	                5 Bit    Registers := 161   
+	                4 Bit    Registers := 12    
+	                3 Bit    Registers := 5     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 87    
++---Multipliers : 
+	                32x32  Multipliers := 2     
++---Muxes : 
+	   5 Input     64 Bit        Muxes := 63    
+	   2 Input     63 Bit        Muxes := 1     
+	   4 Input     63 Bit        Muxes := 1     
+	   2 Input     40 Bit        Muxes := 18    
+	  32 Input     32 Bit        Muxes := 6     
+	   2 Input     32 Bit        Muxes := 13    
+	  32 Input     20 Bit        Muxes := 6     
+	   2 Input     17 Bit        Muxes := 6     
+	  19 Input     16 Bit        Muxes := 1     
+	  16 Input     16 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 112   
+	  12 Input     16 Bit        Muxes := 1     
+	   4 Input     16 Bit        Muxes := 1     
+	   6 Input     16 Bit        Muxes := 3     
+	  10 Input     16 Bit        Muxes := 1     
+	  13 Input     16 Bit        Muxes := 2     
+	   8 Input     16 Bit        Muxes := 1     
+	   3 Input     16 Bit        Muxes := 2     
+	  18 Input     16 Bit        Muxes := 1     
+	  20 Input     16 Bit        Muxes := 1     
+	  11 Input     16 Bit        Muxes := 1     
+	   2 Input     13 Bit        Muxes := 153   
+	   3 Input     13 Bit        Muxes := 9     
+	   2 Input     12 Bit        Muxes := 3     
+	   2 Input      8 Bit        Muxes := 22    
+	   4 Input      8 Bit        Muxes := 18    
+	  13 Input      8 Bit        Muxes := 1     
+	   6 Input      8 Bit        Muxes := 1     
+	  10 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 2     
+	  32 Input      6 Bit        Muxes := 6     
+	   2 Input      6 Bit        Muxes := 20    
+	   3 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 12    
+	  32 Input      5 Bit        Muxes := 12    
+	   2 Input      4 Bit        Muxes := 8     
+	   4 Input      4 Bit        Muxes := 2     
+	   8 Input      4 Bit        Muxes := 1     
+	  10 Input      4 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 7     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 133   
+	  18 Input      1 Bit        Muxes := 3     
+	  19 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 5     
+	   3 Input      1 Bit        Muxes := 9     
+	  11 Input      1 Bit        Muxes := 1     
+	  13 Input      1 Bit        Muxes := 1     
+	   7 Input      1 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Top_Student 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+	   3 Input     16 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+	   4 Input      8 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 4     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 10    
+	   3 Input      1 Bit        Muxes := 4     
+	   4 Input      1 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 1     
+Module clock_divider__1 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module clock_divider__2 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module clock_divider__3 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Audio_Capture__1 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
+Module random__1 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
+Module Oled_Display__1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
++---Registers : 
+	               40 Bit    Registers := 1     
+	               17 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     40 Bit        Muxes := 3     
+	  32 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 2     
+	  32 Input     20 Bit        Muxes := 1     
+	   2 Input     17 Bit        Muxes := 1     
+	  32 Input      6 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 2     
+	  32 Input      5 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+Module clock_divider__4 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module clock_divider__5 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module clock_divider__6 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module clock_divider__7 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module clock_divider__8 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module audio_binh 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 5     
+	   3 Input     14 Bit       Adders := 66    
+	   2 Input      7 Bit       Adders := 97    
+	   2 Input      6 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 2     
+	               12 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                6 Bit    Registers := 3     
+	                5 Bit    Registers := 161   
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
++---Multipliers : 
+	                32x32  Multipliers := 2     
++---Muxes : 
+	  19 Input     16 Bit        Muxes := 1     
+	  16 Input     16 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 14    
+	  12 Input     16 Bit        Muxes := 1     
+	   4 Input     16 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 20    
+	   4 Input      8 Bit        Muxes := 17    
+	   2 Input      4 Bit        Muxes := 2     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 15    
+	  18 Input      1 Bit        Muxes := 3     
+	  19 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+Module clock_divider__10 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module clock_divider__11 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module clock_divider__9 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module maze_logic 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     14 Bit       Adders := 4     
+	   2 Input     13 Bit       Adders := 4     
+	   2 Input      6 Bit       Adders := 3     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               64 Bit    Registers := 64    
+	               13 Bit    Registers := 2     
+	                8 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   5 Input     64 Bit        Muxes := 63    
+	   2 Input     63 Bit        Muxes := 1     
+	   4 Input     63 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input     13 Bit        Muxes := 148   
+	   3 Input     13 Bit        Muxes := 7     
+	  13 Input      8 Bit        Muxes := 1     
+	   6 Input      8 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 6     
+	   8 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 16    
+	   3 Input      1 Bit        Muxes := 1     
+	  11 Input      1 Bit        Muxes := 1     
+	  13 Input      1 Bit        Muxes := 1     
+	   7 Input      1 Bit        Muxes := 1     
+Module dff__3 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module dff__2 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module single_pulse__1 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module clock_divider__12 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Oled_Display__2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
++---Registers : 
+	               40 Bit    Registers := 1     
+	               17 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     40 Bit        Muxes := 3     
+	  32 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 2     
+	  32 Input     20 Bit        Muxes := 1     
+	   2 Input     17 Bit        Muxes := 1     
+	  32 Input      6 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 2     
+	  32 Input      5 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+Module dff__1 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module dff__4 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module single_pulse__2 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module clock_divider__13 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module clock_divider__14 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module clock_divider__15 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module clock_divider__16 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module maze 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input     14 Bit       Adders := 2     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 29    
+	   6 Input     16 Bit        Muxes := 2     
+	  10 Input     16 Bit        Muxes := 1     
+	  13 Input     16 Bit        Muxes := 1     
+	   8 Input     16 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+Module clock_divider__28 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module clock_divider__29 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module clock_divider__30 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Audio_Capture 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
+Module dff__19 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module dff__18 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module single_pulse__9 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module Oled_Display__5 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
++---Registers : 
+	               40 Bit    Registers := 1     
+	               17 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     40 Bit        Muxes := 3     
+	  32 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 2     
+	  32 Input     20 Bit        Muxes := 1     
+	   2 Input     17 Bit        Muxes := 1     
+	  32 Input      6 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 2     
+	  32 Input      5 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+Module dff__21 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module dff__20 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module single_pulse__10 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module dff__23 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module dff__22 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module single_pulse__11 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module dff__5 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module dff__24 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module single_pulse__12 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module nigel 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 4     
+	   3 Input      7 Bit       Adders := 2     
+	   2 Input      7 Bit       Adders := 3     
+	   2 Input      6 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	               12 Bit    Registers := 1     
+	                7 Bit    Registers := 2     
+	                6 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   6 Input     16 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 8     
+	  19 Input      1 Bit        Muxes := 1     
+Module clock_divider__26 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module clock_divider__27 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Oled_Display__4 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
++---Registers : 
+	               40 Bit    Registers := 1     
+	               17 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     40 Bit        Muxes := 3     
+	  32 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 2     
+	  32 Input     20 Bit        Muxes := 1     
+	   2 Input     17 Bit        Muxes := 1     
+	  32 Input      6 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 2     
+	  32 Input      5 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+Module dff__13 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module dff__12 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module single_pulse__6 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module dff__15 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module dff__14 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module single_pulse__7 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module dff__17 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module dff__16 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module single_pulse__8 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module game_menu 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 25    
+	   3 Input     16 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 6     
+Module clock_divider__17 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module clock_divider__18 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module clock_divider__19 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module clock_divider__20 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module clock_divider__21 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module clock_divider__22 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module clock_divider__23 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module clock_divider__24 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module clock_divider__25 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Oled_Display__3 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
++---Registers : 
+	               40 Bit    Registers := 1     
+	               17 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     40 Bit        Muxes := 3     
+	  32 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 2     
+	  32 Input     20 Bit        Muxes := 1     
+	   2 Input     17 Bit        Muxes := 1     
+	  32 Input      6 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 2     
+	  32 Input      5 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+Module Audio_Capture__2 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
+Module dff__7 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module dff__6 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module single_pulse__3 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module dff__9 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module dff__8 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module single_pulse__4 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module dff__11 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module dff__10 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module single_pulse__5 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module random 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
+Module shooting_game 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input     14 Bit       Adders := 21    
+	   2 Input     13 Bit       Adders := 2     
+	   2 Input      7 Bit       Adders := 39    
+	   2 Input      6 Bit       Adders := 4     
+	   2 Input      3 Bit       Adders := 3     
++---Registers : 
+	               16 Bit    Registers := 1     
+	               13 Bit    Registers := 4     
+	               12 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                6 Bit    Registers := 3     
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 3     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 36    
+	  13 Input     16 Bit        Muxes := 1     
+	  18 Input     16 Bit        Muxes := 1     
+	  20 Input     16 Bit        Muxes := 1     
+	   2 Input     13 Bit        Muxes := 5     
+	   3 Input     13 Bit        Muxes := 2     
+	   2 Input     12 Bit        Muxes := 1     
+	  10 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 8     
+	   3 Input      6 Bit        Muxes := 1     
+	  10 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 24    
+	   6 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 3     
+	   3 Input      1 Bit        Muxes := 3     
+Module clock_divider__31 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module clock_divider 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Oled_Display 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
++---Registers : 
+	               40 Bit    Registers := 1     
+	               17 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     40 Bit        Muxes := 3     
+	  32 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 2     
+	  32 Input     20 Bit        Muxes := 1     
+	   2 Input     17 Bit        Muxes := 1     
+	  32 Input      6 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 2     
+	  32 Input      5 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+Module dff__27 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module dff__26 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module single_pulse__13 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module dff__29 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module dff__28 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module single_pulse__14 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module dff__25 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module dff 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module single_pulse 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module main_menu 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 2     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
++---Muxes : 
+	  11 Input     16 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 7     
+	   2 Input      2 Bit        Muxes := 6     
+	   4 Input      2 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 7     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "clock_10/new_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clock_381/new_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clock_30/new_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clock_10/new_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clock_381/new_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clock_30/new_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\seg_reg[7] )
+INFO: [Synth 8-4471] merging register 'encoded_audio_reg[5:0]' into 'encoded_audio_reg[5:0]' [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/audio_binh.v:117]
+WARNING: [Synth 8-6014] Unused sequential element clock_60/new_clock_reg was removed.  [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/clock_divider.v:30]
+WARNING: [Synth 8-6014] Unused sequential element clock_100/new_clock_reg was removed.  [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/clock_divider.v:30]
+WARNING: [Synth 8-6014] Unused sequential element encoded_audio_reg was removed.  [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/audio_binh.v:117]
+INFO: [Synth 8-5544] ROM "oled_data" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_out" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "wave" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "clock_3/new_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clock_6p25m/new_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clock_20k/new_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/audio_binh.v:588]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/audio_binh.v:588]
+INFO: [Synth 8-5546] ROM "fsm_next_state0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "fsm_next_state0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "clock_20k/new_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clock_3/new_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clock_6p25m/new_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+DSP Report: Generating DSP oled_data3, operation Mode is: A*B.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: Generating DSP oled_data3, operation Mode is: A*B.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: Generating DSP oled_data3, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: Generating DSP oled_data3, operation Mode is: A*B.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: Generating DSP oled_data3, operation Mode is: A*B.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: Generating DSP oled_data3, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+INFO: [Synth 8-3886] merging instance 'state_out_reg[0]' (FDRE) to 'state_out_reg[2]'
+INFO: [Synth 8-3886] merging instance 'state_out_reg[2]' (FDRE) to 'state_out_reg[3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\state_out_reg[3] )
+INFO: [Synth 8-3886] merging instance 'oled_data_reg[5]' (FDE) to 'oled_data_reg[6]'
+INFO: [Synth 8-5545] ROM "clock_1/new_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clock_381/new_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "new_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "row0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "row0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "col0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "col0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "COUNT_A0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clock_1/new_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clock_381/new_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-3331] design maze_logic has unconnected port BTNC_sig
+WARNING: [Synth 8-3331] design maze_logic has unconnected port clk_10hz
+INFO: [Synth 8-3886] merging instance 'state_out_reg[1]' (FDE) to 'state_out_reg[3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\state_out_reg[3] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (maze1/\seg_reg[7] )
+WARNING: [Synth 8-3332] Sequential element (seg_reg[7]) is unused and will be removed from module maze_logic.
+WARNING: [Synth 8-6014] Unused sequential element clock_20k/new_clock_reg was removed.  [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/clock_divider.v:30]
+INFO: [Synth 8-5544] ROM "dir" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "clock_20/new_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clock_2/new_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clock_6p25m/new_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clock_10/new_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "fsm_next_state0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "fsm_next_state0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "clock_2/new_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clock_20/new_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clock_6p25m/new_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clock_10/new_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-3886] merging instance 'oled_data_reg[0]' (FDRE) to 'oled_data_reg[11]'
+INFO: [Synth 8-3886] merging instance 'oled_data_reg[1]' (FDRE) to 'oled_data_reg[3]'
+INFO: [Synth 8-3886] merging instance 'oled_data_reg[5]' (FDRE) to 'oled_data_reg[6]'
+INFO: [Synth 8-3886] merging instance 'oled_data_reg[7]' (FDRE) to 'oled_data_reg[9]'
+INFO: [Synth 8-3886] merging instance 'oled_data_reg[8]' (FDRE) to 'oled_data_reg[10]'
+INFO: [Synth 8-3886] merging instance 'oled_data_reg[12]' (FDRE) to 'oled_data_reg[14]'
+INFO: [Synth 8-5544] ROM "state_out" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "samples" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "col_left_limit" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "clock_20k/new_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clock_10/new_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clock_6p25m/new_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "box_game" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "oled_data" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "clock_6p25m/new_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clock_10/new_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "box_game" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "oled_data" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "clock_6p25m/new_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clock_10/new_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "oled_data" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element clock_100/new_clock_reg was removed.  [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/clock_divider.v:30]
+WARNING: [Synth 8-6014] Unused sequential element clock_20/new_clock_reg was removed.  [C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.srcs/sources_1/new/clock_divider.v:30]
+INFO: [Synth 8-5544] ROM "samples" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_out" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "y0" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "clock_20k/new_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clock_6p25m/new_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clock_10/new_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clock_3/new_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clock_381/new_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clock_30/new_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clock_60/new_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "fsm_next_state0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "fsm_next_state0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "clock_10/new_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clock_20k/new_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clock_6p25m/new_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "fsm_next_state0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "fsm_next_state0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "clock_10/new_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clock_6p25m/new_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "fsm_next_state0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "fsm_next_state0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "clock_10/new_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clock_381/new_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clock_20k/new_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clock_60/new_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clock_30/new_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clock_6p25m/new_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clock_3/new_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-3331] design shooting_game has unconnected port JC[2]
+WARNING: [Synth 8-3331] design shooting_game has unconnected port sw[14]
+WARNING: [Synth 8-3331] design shooting_game has unconnected port sw[13]
+WARNING: [Synth 8-3331] design shooting_game has unconnected port sw[12]
+WARNING: [Synth 8-3331] design shooting_game has unconnected port sw[11]
+WARNING: [Synth 8-3331] design shooting_game has unconnected port sw[10]
+WARNING: [Synth 8-3331] design shooting_game has unconnected port sw[9]
+WARNING: [Synth 8-3331] design shooting_game has unconnected port sw[8]
+WARNING: [Synth 8-3331] design shooting_game has unconnected port sw[7]
+WARNING: [Synth 8-3331] design shooting_game has unconnected port sw[6]
+WARNING: [Synth 8-3331] design shooting_game has unconnected port sw[5]
+WARNING: [Synth 8-3331] design shooting_game has unconnected port sw[4]
+WARNING: [Synth 8-3331] design shooting_game has unconnected port sw[3]
+WARNING: [Synth 8-3331] design shooting_game has unconnected port sw[2]
+WARNING: [Synth 8-3331] design shooting_game has unconnected port sw[1]
+WARNING: [Synth 8-3331] design shooting_game has unconnected port btnL
+WARNING: [Synth 8-3331] design shooting_game has unconnected port btnR
+WARNING: [Synth 8-3331] design game_menu has unconnected port JC[2]
+WARNING: [Synth 8-3331] design nigel has unconnected port JC[2]
+INFO: [Synth 8-3886] merging instance 'unit_3/oled_data_reg[0]' (FDRE) to 'unit_3/oled_data_reg[11]'
+INFO: [Synth 8-3886] merging instance 'unit_3/oled_data_reg[1]' (FDRE) to 'unit_3/oled_data_reg[3]'
+INFO: [Synth 8-3886] merging instance 'unit_5/oled_data_reg[1]' (FDE) to 'unit_5/oled_data_reg[3]'
+INFO: [Synth 8-3886] merging instance 'unit_3/oled_data_reg[2]' (FDRE) to 'unit_3/oled_data_reg[4]'
+INFO: [Synth 8-3886] merging instance 'unit_5/oled_data_reg[2]' (FDE) to 'unit_5/oled_data_reg[4]'
+INFO: [Synth 8-3886] merging instance 'unit_3/oled_data_reg[5]' (FDRE) to 'unit_3/oled_data_reg[11]'
+INFO: [Synth 8-3886] merging instance 'unit_1/oled_data_reg[5]' (FDE) to 'unit_1/oled_data_reg[6]'
+INFO: [Synth 8-3886] merging instance 'unit_5/oled_data_reg[5]' (FDE) to 'unit_5/oled_data_reg[6]'
+INFO: [Synth 8-3886] merging instance 'unit_3/oled_data_reg[6]' (FDRE) to 'unit_3/oled_data_reg[11]'
+INFO: [Synth 8-3886] merging instance 'unit_3/oled_data_reg[7]' (FDRE) to 'unit_3/oled_data_reg[9]'
+INFO: [Synth 8-3886] merging instance 'unit_5/oled_data_reg[7]' (FDE) to 'unit_5/oled_data_reg[9]'
+INFO: [Synth 8-3886] merging instance 'unit_3/oled_data_reg[8]' (FDRE) to 'unit_3/oled_data_reg[10]'
+INFO: [Synth 8-3886] merging instance 'unit_5/oled_data_reg[8]' (FDE) to 'unit_5/oled_data_reg[10]'
+INFO: [Synth 8-3886] merging instance 'unit_3/oled_data_reg[12]' (FDRE) to 'unit_3/oled_data_reg[14]'
+INFO: [Synth 8-3886] merging instance 'unit_5/oled_data_reg[12]' (FDE) to 'unit_5/oled_data_reg[14]'
+INFO: [Synth 8-3886] merging instance 'unit_3/oled_data_reg[13]' (FDRE) to 'unit_3/oled_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'unit_5/oled_data_reg[13]' (FDE) to 'unit_5/oled_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'unit_5/y_ball_reg[7]' (FDRE) to 'unit_5/y_ball_reg[8]'
+INFO: [Synth 8-3886] merging instance 'unit_5/y_ball_reg[8]' (FDRE) to 'unit_5/y_ball_reg[9]'
+INFO: [Synth 8-3886] merging instance 'unit_5/y_ball_reg[9]' (FDRE) to 'unit_5/y_ball_reg[10]'
+INFO: [Synth 8-3886] merging instance 'unit_5/y_ball_reg[10]' (FDRE) to 'unit_5/y_ball_reg[11]'
+INFO: [Synth 8-3886] merging instance 'unit_5/y_ball_reg[11]' (FDRE) to 'unit_5/y_ball_reg[12]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (unit_5/\y_ball_reg[12] )
+INFO: [Synth 8-3886] merging instance 'unit_5/y_arrow_reg[7]' (FDRE) to 'unit_5/y_arrow_reg[8]'
+INFO: [Synth 8-3886] merging instance 'unit_5/y_arrow_reg[8]' (FDRE) to 'unit_5/y_arrow_reg[9]'
+INFO: [Synth 8-3886] merging instance 'unit_5/y_arrow_reg[9]' (FDRE) to 'unit_5/y_arrow_reg[10]'
+INFO: [Synth 8-3886] merging instance 'unit_5/y_arrow_reg[10]' (FDRE) to 'unit_5/y_arrow_reg[11]'
+INFO: [Synth 8-3886] merging instance 'unit_5/y_arrow_reg[11]' (FDRE) to 'unit_5/y_arrow_reg[12]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (unit_5/\y_arrow_reg[12] )
+INFO: [Synth 8-3886] merging instance 'unit_3/state_out_reg[0]' (FDE) to 'unit_3/state_out_reg[1]'
+INFO: [Synth 8-3886] merging instance 'unit_1/state_out_reg[1]' (FDRE) to 'unit_1/state_out_reg[2]'
+INFO: [Synth 8-3886] merging instance 'unit_1/state_out_reg[2]' (FDRE) to 'unit_1/state_out_reg[3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (unit_3/\state_out_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\unit_1/state_out_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (unit_5/\state_out_reg[3] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (unit_5/\seg_reg[7] )
+WARNING: [Synth 8-3332] Sequential element (state_out_reg[3]) is unused and will be removed from module game_menu.
+WARNING: [Synth 8-3332] Sequential element (seg_reg[7]) is unused and will be removed from module shooting_game.
+WARNING: [Synth 8-3332] Sequential element (state_out_reg[3]) is unused and will be removed from module shooting_game.
+WARNING: [Synth 8-3332] Sequential element (y_ball_reg[12]) is unused and will be removed from module shooting_game.
+WARNING: [Synth 8-3332] Sequential element (y_arrow_reg[12]) is unused and will be removed from module shooting_game.
+INFO: [Synth 8-5544] ROM "oled_data" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "clock_6p25m/new_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clock_10/new_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "fsm_next_state0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "fsm_next_state0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "clock_10/new_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clock_6p25m/new_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-3331] design main_menu has unconnected port JC[2]
+WARNING: [Synth 8-3331] design main_menu has unconnected port sw[15]
+WARNING: [Synth 8-3331] design main_menu has unconnected port sw[14]
+WARNING: [Synth 8-3331] design main_menu has unconnected port sw[13]
+WARNING: [Synth 8-3331] design main_menu has unconnected port sw[12]
+WARNING: [Synth 8-3331] design main_menu has unconnected port sw[11]
+WARNING: [Synth 8-3331] design main_menu has unconnected port sw[10]
+WARNING: [Synth 8-3331] design main_menu has unconnected port sw[9]
+WARNING: [Synth 8-3331] design main_menu has unconnected port sw[8]
+WARNING: [Synth 8-3331] design main_menu has unconnected port sw[7]
+WARNING: [Synth 8-3331] design main_menu has unconnected port sw[6]
+WARNING: [Synth 8-3331] design main_menu has unconnected port sw[5]
+WARNING: [Synth 8-3331] design main_menu has unconnected port sw[4]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3886] merging instance 'unit_0/oled_data_reg[0]' (FDRE) to 'unit_0/oled_data_reg[11]'
+INFO: [Synth 8-3886] merging instance 'unit_0/oled_data_reg[4]' (FDRE) to 'unit_0/oled_data_reg[11]'
+INFO: [Synth 8-3886] merging instance 'unit_0/oled_data_reg[5]' (FDRE) to 'unit_0/oled_data_reg[11]'
+INFO: [Synth 8-3886] merging instance 'unit_0/oled_data_reg[6]' (FDRE) to 'unit_0/oled_data_reg[11]'
+INFO: [Synth 8-3886] merging instance 'unit_0/oled_data_reg[7]' (FDRE) to 'unit_0/oled_data_reg[9]'
+INFO: [Synth 8-3886] merging instance 'unit_0/oled_data_reg[12]' (FDRE) to 'unit_0/oled_data_reg[14]'
+INFO: [Synth 8-3886] merging instance 'unit_0/oled_data_reg[13]' (FDRE) to 'unit_0/oled_data_reg[15]'
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:02:13 ; elapsed = 00:02:53 . Memory (MB): peak = 1953.152 ; gain = 1697.461
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping  Report (see note below)
++----------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name     | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++----------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|audio_binh__GB1 | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|audio_binh__GB1 | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|audio_binh__GB1 | (PCIN>>17)+A*B | 15     | 15     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|audio_binh__GB1 | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|audio_binh__GB1 | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|audio_binh__GB1 | (PCIN>>17)+A*B | 15     | 15     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++----------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+------------------+------------+----------+
+|      |RTL Partition     |Replication |Instances |
++------+------------------+------------+----------+
+|1     |audio_binh__GB0   |           1|     10272|
+|2     |audio_binh__GB1   |           1|      4089|
+|3     |maze__GB0         |           1|     27158|
+|4     |maze__GB1         |           1|      4398|
+|5     |Top_Student__GCB0 |           1|     13343|
+|6     |Top_Student__GCB1 |           1|      6002|
++------+------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:28 ; elapsed = 00:03:08 . Memory (MB): peak = 1953.152 ; gain = 1697.461
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:02:33 ; elapsed = 00:03:14 . Memory (MB): peak = 1953.152 ; gain = 1697.461
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+----------------+------------+----------+
+|      |RTL Partition   |Replication |Instances |
++------+----------------+------------+----------+
+|1     |audio_binh__GB0 |           1|      9951|
+|2     |audio_binh__GB1 |           1|      4089|
+|3     |maze__GB0       |           1|     27109|
+|4     |maze__GB1       |           1|      4398|
+|5     |Top_Student_GT0 |           1|     19320|
++------+----------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\state_reg[3] )
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:02:39 ; elapsed = 00:03:20 . Memory (MB): peak = 1953.152 ; gain = 1697.461
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+----------------+------------+----------+
+|      |RTL Partition   |Replication |Instances |
++------+----------------+------------+----------+
+|1     |audio_binh__GB0 |           1|      3912|
+|2     |audio_binh__GB1 |           1|      2039|
+|3     |maze__GB0       |           1|      5846|
+|4     |maze__GB1       |           1|      1853|
+|5     |Top_Student_GT0 |           1|      8605|
++------+----------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:02:43 ; elapsed = 00:03:24 . Memory (MB): peak = 1953.152 ; gain = 1697.461
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:44 ; elapsed = 00:03:25 . Memory (MB): peak = 1953.152 ; gain = 1697.461
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:45 ; elapsed = 00:03:26 . Memory (MB): peak = 1953.152 ; gain = 1697.461
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:45 ; elapsed = 00:03:26 . Memory (MB): peak = 1953.152 ; gain = 1697.461
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:46 ; elapsed = 00:03:27 . Memory (MB): peak = 1953.152 ; gain = 1697.461
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:46 ; elapsed = 00:03:27 . Memory (MB): peak = 1953.152 ; gain = 1697.461
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |BUFG    |    12|
+|2     |CARRY4  |  1290|
+|3     |DSP48E1 |     6|
+|4     |LUT1    |   422|
+|5     |LUT2    |  1429|
+|6     |LUT3    |  1310|
+|7     |LUT4    |  1556|
+|8     |LUT5    |  2820|
+|9     |LUT6    |  8555|
+|10    |MUXF7   |   767|
+|11    |MUXF8   |   113|
+|12    |FDCE    |    65|
+|13    |FDE_1   |   128|
+|14    |FDPE    |     6|
+|15    |FDRE    |  3828|
+|16    |FDRE_1  |    62|
+|17    |FDSE    |    47|
+|18    |FDSE_1  |     2|
+|19    |LD      |    19|
+|20    |IBUF    |    23|
+|21    |OBUF    |    38|
++------+--------+------+
+
+Report Instance Areas: 
++------+-----------------+-----------------+------+
+|      |Instance         |Module           |Cells |
++------+-----------------+-----------------+------+
+|1     |top              |                 | 22498|
+|2     |  unit_0         |main_menu        |  2779|
+|3     |    clock_10     |clock_divider_65 |    55|
+|4     |    clock_6p25m  |clock_divider_66 |    51|
+|5     |    enter_0      |single_pulse_67  |     9|
+|6     |      mod1       |dff_75           |     2|
+|7     |      mod2       |dff_76           |     1|
+|8     |    go_down      |single_pulse_68  |     9|
+|9     |      mod1       |dff_73           |     2|
+|10    |      mod2       |dff_74           |     1|
+|11    |    go_up        |single_pulse_69  |     5|
+|12    |      mod1       |dff_71           |     2|
+|13    |      mod2       |dff_72           |     1|
+|14    |    oled         |Oled_Display_70  |  2618|
+|15    |  unit_1         |nigel            |   948|
+|16    |    audio0       |Audio_Capture_48 |    91|
+|17    |    blink        |single_pulse_49  |     4|
+|18    |      mod1       |dff_63           |     2|
+|19    |      mod2       |dff_64           |     1|
+|20    |    clock_10     |clock_divider_50 |    56|
+|21    |    clock_20k    |clock_divider_51 |    54|
+|22    |    clock_6p25m  |clock_divider_52 |    52|
+|23    |    move_left    |single_pulse_53  |    24|
+|24    |      mod1       |dff_61           |     2|
+|25    |      mod2       |dff_62           |     1|
+|26    |    move_right   |single_pulse_54  |     4|
+|27    |      mod1       |dff_59           |     2|
+|28    |      mod2       |dff_60           |     1|
+|29    |    oled         |Oled_Display_55  |   415|
+|30    |    reset        |single_pulse_56  |     5|
+|31    |      mod1       |dff_57           |     2|
+|32    |      mod2       |dff_58           |     1|
+|33    |    solve        |find_row_col     |   111|
+|34    |  unit_2         |audio_binh       |  5977|
+|35    |    audio0       |Audio_Capture_39 |    87|
+|36    |    clock_10     |clock_divider_40 |    55|
+|37    |    clock_20k    |clock_divider_41 |    52|
+|38    |    clock_3      |clock_divider_42 |    54|
+|39    |    clock_30     |clock_divider_43 |    55|
+|40    |    clock_381    |clock_divider_44 |    53|
+|41    |    clock_6p25m  |clock_divider_45 |    51|
+|42    |    oled         |Oled_Display_46  |  4282|
+|43    |    random_color |random_47        |    17|
+|44    |  unit_3         |game_menu        |  1619|
+|45    |    clock_10     |clock_divider_27 |    55|
+|46    |    clock_6p25m  |clock_divider_28 |    51|
+|47    |    enter_0      |single_pulse_29  |     7|
+|48    |      mod1       |dff_37           |     2|
+|49    |      mod2       |dff_38           |     1|
+|50    |    go_down      |single_pulse_30  |     4|
+|51    |      mod1       |dff_35           |     2|
+|52    |      mod2       |dff_36           |     1|
+|53    |    go_up        |single_pulse_31  |     5|
+|54    |      mod1       |dff_33           |     2|
+|55    |      mod2       |dff_34           |     1|
+|56    |    oled         |Oled_Display_32  |  1469|
+|57    |  unit_4         |maze             |  7749|
+|58    |    clock_1      |clock_divider_14 |    54|
+|59    |    clock_381    |clock_divider_18 |    53|
+|60    |    blink        |single_pulse_13  |     5|
+|61    |      mod1       |dff_25           |     2|
+|62    |      mod2       |dff_26           |     1|
+|63    |    clock_10     |clock_divider_15 |    55|
+|64    |    clock_2      |clock_divider_16 |    55|
+|65    |    clock_20     |clock_divider_17 |    55|
+|66    |    clock_6p25m  |clock_divider_19 |    51|
+|67    |    maze1        |maze_logic       |  5086|
+|68    |      clock_20   |clock_divider_24 |    63|
+|69    |    oled         |Oled_Display_20  |  1995|
+|70    |    reset        |single_pulse_21  |   308|
+|71    |      mod1       |dff_22           |     2|
+|72    |      mod2       |dff_23           |     1|
+|73    |  unit_5         |shooting_game    |  3251|
+|74    |    audio0       |Audio_Capture    |    80|
+|75    |    bang         |single_pulse     |    18|
+|76    |      mod1       |dff_11           |     2|
+|77    |      mod2       |dff_12           |     1|
+|78    |    clock_10     |clock_divider    |    55|
+|79    |    clock_20k    |clock_divider_0  |    53|
+|80    |    clock_3      |clock_divider_1  |    54|
+|81    |    clock_30     |clock_divider_2  |    55|
+|82    |    clock_381    |clock_divider_3  |    53|
+|83    |    clock_60     |clock_divider_4  |    54|
+|84    |    clock_6p25m  |clock_divider_5  |    51|
+|85    |    go_down      |single_pulse_6   |     5|
+|86    |      mod1       |dff_9            |     2|
+|87    |      mod2       |dff_10           |     1|
+|88    |    go_up        |single_pulse_7   |     4|
+|89    |      mod1       |dff              |     2|
+|90    |      mod2       |dff_8            |     1|
+|91    |    oled         |Oled_Display     |  1954|
+|92    |    random_move  |random           |    13|
++------+-----------------+-----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:46 ; elapsed = 00:03:27 . Memory (MB): peak = 1953.152 ; gain = 1697.461
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 52 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:52 ; elapsed = 00:02:50 . Memory (MB): peak = 1953.152 ; gain = 417.566
+Synthesis Optimization Complete : Time (s): cpu = 00:02:47 ; elapsed = 00:03:28 . Memory (MB): peak = 1953.152 ; gain = 1697.461
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 2410 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 211 instances were transformed.
+  FDE_1 => FDRE (inverted pins: C): 128 instances
+  FDRE_1 => FDRE (inverted pins: C): 62 instances
+  FDSE_1 => FDSE (inverted pins: C): 2 instances
+  LD => LDCE: 19 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+302 Infos, 293 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:02:53 ; elapsed = 00:03:34 . Memory (MB): peak = 1953.152 ; gain = 1710.340
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Van Binh/Downloads/S1_11_Nguyen Van Binh_Nigel Ng_Archive/SoundDisplay/SoundDisplay.runs/synth_1/Top_Student.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Top_Student_utilization_synth.rpt -pb Top_Student_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.152 . Memory (MB): peak = 1953.152 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sat Apr  3 15:22:38 2021...
