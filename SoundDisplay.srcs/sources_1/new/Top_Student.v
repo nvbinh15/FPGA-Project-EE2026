@@ -6,11 +6,9 @@
 //
 //  LAB SESSION DAY (Delete where applicable): MONDAY P.M, TUESDAY P.M, WEDNESDAY P.M, THURSDAY A.M., THURSDAY P.M
 //
-//  STUDENT A NAME: 
-//  STUDENT A MATRICULATION NUMBER: 
+//  STUDENT A NAME: Nguyen Van Binh
 //
-//  STUDENT B NAME: 
-//  STUDENT B MATRICULATION NUMBER: 
+//  STUDENT B NAME: Nigel Ng
 //
 //////////////////////////////////////////////////////////////////////////////////
 
@@ -107,18 +105,14 @@ module Top_Student (
                 (state == 3) ? JC_wire[3] : 
                 (state == 4) ? JC_wire[4] :
                 JC_wire[5];
-                //(state == 9) ? JC_wire[9] :
-                //JC_wire[6];
 
     assign J_MIC3_Pin1 = (state == 1) ? J_MIC3_Pin1_wire[1] : 
                          (state == 2) ? J_MIC3_Pin1_wire[2] :
                          J_MIC3_Pin1_wire[5];
-                         //J_MIC3_Pin1_wire[6];
                                                               
     assign J_MIC3_Pin4 = (state == 1) ? J_MIC3_Pin4_wire[1] : 
                          (state == 2) ? J_MIC3_Pin4_wire[2] :
                          J_MIC3_Pin4_wire[5];
-                         //J_MIC3_Pin4_wire[6];  
     
     always @ (posedge CLK100MHZ)
     begin
