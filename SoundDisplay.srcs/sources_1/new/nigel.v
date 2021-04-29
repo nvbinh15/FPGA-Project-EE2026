@@ -83,7 +83,6 @@ module nigel(
         else encoded_peak <= (peak - 2048) / 128 + 1;
     end
     end    
-    
 
     wire blinky_tick;
     single_pulse blink(.clock(clk10),.BTNC(BTNC),.OUT(blinky_tick));
@@ -96,7 +95,6 @@ module nigel(
         .d_cn(JC[4]), .resn(JC[5]), .vccen(JC[6]),
         .pmoden(JC[7]),.teststate(teststate)
     );
-    
     
     
     //starting block of row//
@@ -215,10 +213,5 @@ module nigel(
         end
                 
     end
-
-        
-          
-        
  
-    
 endmodule
