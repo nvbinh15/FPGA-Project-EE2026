@@ -1,8 +1,8 @@
 # FPGA Project (EE2026 - Digital Design)
 
-## Descriptiom
+## Description
 This repo contains source code for the FPGA Project of the EE2026 (Digital Design) module in our first year at NUS. We built a Sight and Sound Entertainment (SSE)
-system including a Maze Soving game, a Shooting game, and other complusory objectives of processing audio data and visualization using Verilog.
+system including a Maze Soving game, a Shooting game (both with autoplay mode), and other objectives of processing audio data and visualization using Verilog.
 
 ## Hardware
 * Digilent Basys 3 Board
